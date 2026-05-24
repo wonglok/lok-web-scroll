@@ -1,6 +1,6 @@
 export function HeroContent() {
   return (
-    <div className="relative h-full flex items-center bg-black z-20">
+    <div className="relative h-full flex items-center bg-[#515151] z-20">
       <div className="w-full max-w-3xl px-6 sm:px-12 lg:px-20">
         <p className="text-sm sm:text-base font-semibold tracking-[0.2em] text-white/70  uppercase">
           Eternal Promise
