@@ -6,8 +6,13 @@ import { ScrollTrigger } from "gsap/all";
 
 /* The encoding is super important here to enable frame-by-frame scrubbing. */
 
+// GOOD QUALITY
 // ffmpeg -i ./input.mp4 -movflags faststart -vcodec libx264 -crf 23 -g 1 -pix_fmt yuv420p output.mp4
+
+// LOWER QUALITY
 // ffmpeg -i ./input.mp4 -vf scale=960:-1 -movflags faststart -vcodec libx264 -crf 20 -g 1 -pix_fmt yuv420p output_960.mp4
+
+// first frame
 // ffmpeg -i output.mp4 -frames:v 1 first.jpg
 
 // last frame
