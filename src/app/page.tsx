@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { HeroContent } from "./_ui/HeroContent";
 import { MoreContent } from "./_ui/MoreContent";
 import { VideoBackground } from "./_ui/VideoBackground";
@@ -18,7 +18,6 @@ export default function Page() {
       >
         <Padding></Padding>
         <div id="ads">
-          {/* 123 */}
           <HeroContent></HeroContent>
           <MoreContent></MoreContent>
         </div>
