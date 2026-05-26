@@ -86,10 +86,7 @@ export function HeroContent() {
         {/* Ornamental fleuron divider */}
         <div className="mt-8 sm:mt-10 animate-fade-in anim-delay-2 flex items-center justify-center">
           <div className="ornament-rule w-full max-w-55">
-            <span
-              className="text-2xl select-none"
-              style={{ color: "#b8860b" }}
-            >
+            <span className="text-2xl select-none" style={{ color: "#b8860b" }}>
               ❧
             </span>
           </div>
@@ -147,9 +144,8 @@ export function HeroContent() {
               borderRadius: "4px",
             }}
             onMouseEnter={(e) => {
-              (
-                e.target as HTMLElement
-              ).style.backgroundColor = "rgba(201,164,75,0.1)";
+              (e.target as HTMLElement).style.backgroundColor =
+                "rgba(201,164,75,0.1)";
               (e.target as HTMLElement).style.color = "#8b6914";
               (e.target as HTMLElement).style.boxShadow =
                 "0 4px 20px rgba(180,130,40,0.12)";

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { HeroContent } from "./_ui/HeroContent";
+import { MoreContent } from "./_ui/MoreContent";
 import { VideoBackground } from "./_ui/VideoBackground";
 
 export default function Page() {
@@ -19,6 +20,7 @@ export default function Page() {
         <div className="h-full" id="ads">
           {/* 123 */}
           <HeroContent></HeroContent>
+          <MoreContent></MoreContent>
         </div>
       </div>
     </>
