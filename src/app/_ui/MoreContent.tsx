@@ -1,7 +1,7 @@
 export function MoreContent() {
   // bg-white/50
   return (
-    <div className="max-w-lg mx-auto backdrop-blur-[25px]  relative z-20 overflow-hidden  ">
+    <div className="backdrop-blur-[25px]  relative z-20 overflow-hidden  ">
       {/* Subtle top fade-in from transparent to white */}
       {/* <div
         className="absolute top-0 left-0 right-0 z-1 pointer-events-none"
