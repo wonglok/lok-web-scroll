@@ -19,7 +19,15 @@ import { ScrollTrigger } from "gsap/all";
 // ffmpeg -sseof -1 -i output.mp4 -update 1 -q:v 2 last.jpg
 
 //
-export function VideoBackground({ content }: { content?: ReactNode | null }) {
+export function VideoBackground({
+  containerID = "#my-container",
+  adsID = "",
+  content,
+}: {
+  adsID: string;
+  containerID: string;
+  content?: ReactNode | null;
+}) {
   const [url, setURL] = useState("/vids/output.mp4");
   const [tl, setTimeline] = useState(false);
   // const refVideo = useRef<HTMLVideoElement>(null);
@@ -77,12 +85,10 @@ export function VideoBackground({ content }: { content?: ReactNode | null }) {
 
     {
       let ttt = setInterval(() => {
-        let container = document.querySelector(
-          "#my-container",
-        ) as HTMLDivElement;
+        let container = document.querySelector(containerID) as HTMLDivElement;
 
         let video = document.querySelector("#vid");
-        let ads = document.querySelector("#ads");
+        let ads = document.querySelector(adsID);
         if (video && ads && container && video.duration) {
           clearInterval(ttt);
           //
@@ -115,14 +121,14 @@ export function VideoBackground({ content }: { content?: ReactNode | null }) {
     gsap.registerPlugin(ScrollTrigger);
 
     let container = setInterval(() => {
-      let video = document.querySelector("#my-container");
+      let video = document.querySelector(containerID);
       if (video) {
         clearInterval(container);
 
         const timeline = gsap.timeline({
           defaults: { duration: 1 },
           scrollTrigger: {
-            trigger: "#my-container",
+            trigger: containerID,
             start: "top top",
             end: "bottom bottom",
             scrub: true,
