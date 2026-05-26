@@ -17,7 +17,7 @@ export default function Page() {
         className=" absolute top-0 left-0 w-full h-full z-20 overflow-scroll"
       >
         <Padding></Padding>
-        <div className="h-full" id="ads">
+        <div id="ads">
           {/* 123 */}
           <HeroContent></HeroContent>
           <MoreContent></MoreContent>
