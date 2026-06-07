@@ -28,7 +28,7 @@ export function VideoBackground({
   containerID: string;
   content?: ReactNode | null;
 }) {
-  const [url, setURL] = useState("/vids/output.mp4");
+  const [url, setURL] = useState("");
   const [tl, setTimeline] = useState(false);
   // const refVideo = useRef<HTMLVideoElement>(null);
   // const refContainer = useRef(null);
@@ -174,7 +174,7 @@ export function VideoBackground({
         src={"/vids/first.jpg"}
       ></img>
 
-      {tl && (
+      {tl && url && (
         <video
           className=" z-[15] absolute top-0 left-0 object-cover w-full h-full select-none"
           id="vid"
