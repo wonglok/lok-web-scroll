@@ -21,6 +21,8 @@ export default function Page() {
       >
         <Padding></Padding>
         <div id="ads">
+          {/*  */}
+          <div className="bg-white h-full w-full">hi hello</div>
           <HeroContent></HeroContent>
           <MoreContent></MoreContent>
         </div>
